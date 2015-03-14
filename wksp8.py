@@ -1,5 +1,5 @@
 """Rx Workshop: Unified Programing Model.
-Part 4 - Bridge event stream to a string observable.
+Bridge event stream to a string observable.
 Usage:
     python wksp8.py
 """
