@@ -1,3 +1,8 @@
+"""Rx Workshop: Unified Programing Model.
+Part 4 - Bridge event stream to a string observable.
+Usage:
+    python wksp8.py
+"""
 from __future__ import print_function
 import gi.repository.Gtk
 import rx
@@ -15,7 +20,7 @@ class Form(gi.repository.Gtk.Window):
 
         self.entry = gi.repository.Gtk.Entry()
         self.entry.connect("changed", lambda x:
-                           self.mov.on_next(self.entry.get_text()))
+                           self.subject.on_next(x.get_text()))
         vbox.pack_start(self.entry, True, True, 0)
 
         hbox = gi.repository.Gtk.Box(spacing=6)
