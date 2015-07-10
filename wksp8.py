@@ -9,7 +9,8 @@ import rx
 
 
 class Form(gi.repository.Gtk.Window):
-
+"""
+"""
     def __init__(self):
         gi.repository.Gtk.Window.__init__(self, title="Form")
         self.subject = rx.subjects.Subject()
